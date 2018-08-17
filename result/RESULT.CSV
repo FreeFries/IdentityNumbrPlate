@@ -1,0 +1,62 @@
+REPORT START for 12Excel97.xls =======
+NUMBER_PLATE,MAKE,COLOUR
+P3RV P,NUMBER_PLATE_NOT_LOCATED
+LF67 OAV,TOYOTA,BLACK,MATCHES_Make,MATCHES_Colour
+LV62 LYA,NISSAN,BLACK,MATCHES_Make,MATCHES_Colour
+DS60 NTN,VAUXHALL,BLACK,MATCHES_Make,MATCHES_Colour
+MK34 RUY,NUMBER_PLATE_NOT_LOCATED
+LT59 CNZ,MERCEDES-BENZ,GREY,MATCHES_Make ,NoMatchOnColour,OurDataHadColourAs='MACHISMO'
+LF53 KGY,PORSCHE,GREY,MATCHES_Make,MATCHES_Colour
+AX02 AVN,MERCEDES,BLUE,MATCHES_Make ,NoMatchOnColour,OurDataHadColourAs='FUNKY BLUE'
+GG45 BGN,NUMBER_PLATE_NOT_LOCATED
+LD10 XLM,MERCEDES-BENZ,SILVER,NoMatchOnMake,OurDataHadMakeAs='FIAT',MATCHES_Colour
+VALID EXCEL CELL but has NULL/EMPTY/BLANKS for a number plate
+AX02 AVN,MERCEDES,BLUE,MATCHES_Make ,NoMatchOnColour,OurDataHadColourAs='FUNKY BLUE'
+REPORT end Records processed = 12 =======
+CLOSED report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/12Excel97.xls
+
+REPORT START for 5NotEmptyButFormatWrong.xlsx =======
+NUMBER_PLATE,MAKE,COLOUR
+CLOSED report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/5NotEmptyButFormatWrong.xlsx
+
+REPORT START for 8MakeColourMissing.csv =======
+NUMBER_PLATE,MAKE,COLOUR
+Closed report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/8MakeColourMissing.csv
+
+REPORT START for 11WrongHeading.csv =======
+NUMBER_PLATE,MAKE,COLOUR
+REPORT end Records processed = 0 =======
+Closed report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/11WrongHeading.csv
+
+REPORT START for 9SampleNumbrPlate.csv =======
+NUMBER_PLATE,MAKE,COLOUR
+P3RV P,NUMBER_PLATE_NOT_LOCATED
+LF67 OAV,TOYOTA,BLACK,MATCHES_Make,MATCHES_Colour
+LV62 LYA,NISSAN,BLACK,MATCHES_Make,MATCHES_Colour
+DS60 NTN,VAUXHALL,BLACK,MATCHES_Make,MATCHES_Colour
+MK34 RUY,NUMBER_PLATE_NOT_LOCATED
+LT59 CNZ,MERCEDES-BENZ,GREY,MATCHES_Make ,NoMatchOnColour,OurDataHadColourAs='MACHISMO'
+LF53 KGY,PORSCHE,GREY,MATCHES_Make,MATCHES_Colour
+AX02 AVN,MERCEDES,BLUE,MATCHES_Make ,NoMatchOnColour,OurDataHadColourAs='FUNKY BLUE'
+GG45 BGN,NUMBER_PLATE_NOT_LOCATED
+LD10 XLM,MERCEDES-BENZ,SILVER,NoMatchOnMake,OurDataHadMakeAs='FIAT',MATCHES_Colour
+,NUMBER_PLATE_NOT_LOCATED
+AX02 AVN,MERCEDES,BLUE,MATCHES_Make ,NoMatchOnColour,OurDataHadColourAs='FUNKY BLUE'
+CE55 BAD,NUMBER_PLATE_NOT_LOCATED
+LV62 LYA,NISSAN,BLACK,NoMatchOnMake,OurDataHadMakeAs='',MATCHES_Colour
+DS60 NTN,VAUXHALL,BLACK,MATCHES_Make ,NoMatchOnColour,OurDataHadColourAs=''
+LV62 LYA,NISSAN,BLACK,NoMatchOnMake,OurDataHadMakeAs='' ,NoMatchOnColour,OurDataHadColourAs=''
+Closed report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/9SampleNumbrPlate.csv
+
+REPORT START for 6SampleNumberPlate.xlsx =======
+NUMBER_PLATE,MAKE,COLOUR
+CLOSED report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/6SampleNumberPlate.xlsx
+
+REPORT START for 7SampleNumberPlateCorruptd.xlsx =======
+NUMBER_PLATE,MAKE,COLOUR
+CLOSED report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/7SampleNumberPlateCorruptd.xlsx
+
+REPORT START for 1SampleNumbrPlate.csv =======
+NUMBER_PLATE,MAKE,COLOUR
+Closed report for /home/arjun/IdeaProjects/IdentityNumbrPlate/./data/1SampleNumbrPlate.csv
+

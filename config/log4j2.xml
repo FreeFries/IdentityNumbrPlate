@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+Loggers — Finally we define actual loggers. In Java code, you will refer to these loggers by their names. Traditionally these have been named using Java package/class names, due to the hierarchial additivity in Log4j. This means that entries logged by a logger named com.andrew_flower can automatically be logged by a Logger named com. Whether this occurs, depends on the additivity. Note that there should always be a RootLogger, and it will actually exist automatically if not defined. Logs not caught be any other logger will be caught be the RootLogger. Read the Architecture page for details and examples of parent loggers, levels and additivity.
+-->
+<!--  attribute for Configuration removed because it complained about File Appender xmlns="http://logging.apache.org/log4j/2.0/config"-->
+<!-- todo the jvm debug option works but the status attribute does not seem to be working -->
+<Configuration  status="INFO"  name="MyLog4JConfig">
+    <Properties>
+        <Property name="JVMROOT">${sys:user.dir}</Property> <!--todo property is effectively final should be in CAPS -->
+        <Property name="LOGS">${JVMROOT}/logs</Property>
+        <Property name="ARCHIVE">${LOGS}/archive</Property>
+        <Property name="PATTERN">%-5level %d{HH:mm} %c{1}(%L) %m%n</Property> <!-- %-5level %d [%t] %c:%M(%L): %m%n -->
+    </Properties>
+    <Appenders>
+        <Console name="MyConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${PATTERN}" />
+        </Console>
+        <File name="MySimplFileAppender" fileName="${LOGS}/SIMPLFile.log" immediateFlush="true"> <!-- todo file stamp pattern  _%d{yyyy-MM-dd-hh-mm} -->
+            <PatternLayout pattern="${PATTERN}" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="TRACE"> <!-- studynote CHANGING THIS to DEBUG also helps debugf() messages in UndertowLogger.ROOT_LOGGER more needs to be understood -->
+            <AppenderRef ref="MyConsoleAppender"/>
+        </Root>
+
+        <!-- STUDYNOTE no level specified it takes it from it's closest parent Root -->
+        <Logger name="xander.engines.filehandling" level="INFO" additivity="false" >  <!--  -->
+            <AppenderRef ref="MyConsoleAppender"/>
+        </Logger>
+
+        <Logger name="xander.run" level="INFO" additivity="false" >  <!--  -->
+            <AppenderRef ref="MyConsoleAppender"/>
+        </Logger>
+
+    </Loggers>
+
+</Configuration>
+

@@ -1,0 +1,15 @@
+.idea/workspace.xml
+target/
+*.log
+*.class
+sqliteData/testtestdb.sqlite3
+*.iml
+result/
+
+# might need to ignore the ones below later
+#*.jar
+#*.war
+#*.ear
+#*.zip
+*.tar.gz
+#*.rar

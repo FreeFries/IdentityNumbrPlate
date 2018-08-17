@@ -1,0 +1,16 @@
+.xls 	application/excel
+.xls 	application/vnd.ms-excel
+.xls 	application/x-excel
+.xls 	application/x-msexcel
+.xlsx   application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+.csv    text/csv
+
+Excel Add-in file	application/vnd.ms-excel	xla
+Excel chart     	application/vnd.ms-excel	xlc
+Excel macro	        application/vnd.ms-excel	xlm
+Excel spreadsheet	application/vnd.ms-excel	xls
+Excel template	    application/vnd.ms-excel	xlt
+Excel worspace	    application/vnd.ms-excel	xlw
+
+.xls 	Microsoft Excel 	        application/vnd.ms-excel
+.xlsx 	Microsoft Excel (OpenXML) 	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
